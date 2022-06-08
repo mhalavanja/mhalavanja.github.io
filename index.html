@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chess</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="libraries/p5.min.js"></script>
+  </head>
+
+  <body>
+    <div class="overlay" id = "whiteModal">
+      <div class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Odaberite figuru:</h1>
+          </div>
+          <div class = "modal-body">
+            <button id=wQueen  onclick="choosePiece(this.id)" class="button wqueen"></button>
+            <button id=wRook   onclick="choosePiece(this.id)" class="button wrook"></button>
+            <button id=wKnight onclick="choosePiece(this.id)" class="button wknight"></button>
+            <button id=wBishop onclick="choosePiece(this.id)" class="button wbishop"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id = "blackModal">
+      <div class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Odaberite figuru:</h1>
+          </div>
+          <div class = "modal-body">
+            <button id=bQueen  onclick="choosePiece(this.id)" class="button bqueen"></button>
+            <button id=bRook   onclick="choosePiece(this.id)" class="button brook"></button>
+            <button id=bKnight onclick="choosePiece(this.id)" class="button bknight"></button>
+            <button id=bBishop onclick="choosePiece(this.id)" class="button bbishop"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="overlay" id = "matBijeli">
+      <div class="modal kraj">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>POBJEDA BIJELI</h1>
+          </div>
+          <div class = "modal-body">
+            <button id=replay onclick="endGame()" class="button krajGumb">Igraj ponovo!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id = "matCrni">
+      <div class="modal kraj">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>POBJEDA CRNI</h1>
+          </div>
+          <div class = "modal-body">
+            <button id=reset onclick="endGame()" class="button krajGumb">Igraj ponovo!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id = "pat">
+      <div class="modal kraj">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>NERIJEŠENO</h1>
+          </div>
+          <div class = "modal-body">
+            <button id=reset onclick="endGame()" class="button krajGumb">Igraj ponovo!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Piece.js"></script>
+    <script src="Rook.js"></script>
+    <script src="Knight.js"></script>
+    <script src="Bishop.js"></script>
+    <script src="Queen.js"></script>
+    <script src="King.js"></script>
+    <script src="Pawn.js"></script>
+    <script src="Board.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+
+
+<script>
+$('.overlay').on('click', function(e) {
+  if (e.target !== this) {
+    return;
+  }
+});
+</script>
