@@ -1,5 +1,5 @@
-baseURL = "https://yourusername.github.io/"
-title = "Your Name"
+baseURL = "https://mhalavanja.github.io/"
+title = "Matija Halavanja"
 theme = "PaperMod"
 
 [pagination]
@@ -12,12 +12,20 @@ theme = "PaperMod"
   ShowCodeCopyButtons = true
 
 [params.homeInfoParams]
-  Title = "Hey, I'm Your Name 👋"
-  Content = "SWE writing about code, systems, and ideas."
+  Title = "Hey, I'm Matija Halavanja 👋"
+  Content = "Writing about random technical and non-technical topics. Feel free to reach out to me via email or LinkedIn about anything."
 
 [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/yourusername"
+  url = "https://github.com/mhalavanja"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/mhalavanja"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:matija.halavanja@gmail.com"
 
 [[menu.main]]
   name = "Posts"
