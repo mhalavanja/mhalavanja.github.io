@@ -13,7 +13,7 @@ theme = "PaperMod"
 
 [params.homeInfoParams]
   Title = "Hey, I'm Matija Halavanja 👋"
-  Content = "Writing about random technical and non-technical topics. Feel free to reach out to me via email or LinkedIn about anything."
+  Content = "I am a SWE, planning on writing about K8s, Linux, networking or some other IT topics. Feel free to contact me via LinkedIn or an email (mhalavanja@gmail.com) about some topic you would like me to write about, about some mistakes I made in one of these posts, or something else."
 
 [[params.socialIcons]]
   name = "github"
